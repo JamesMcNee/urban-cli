@@ -1,12 +1,16 @@
 package uk.co.jamesmcnee.urbancli.commands;
 
+import org.jline.reader.LineReader;
 import org.jline.utils.AttributedString;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 import uk.co.jamesmcnee.urbancli.domain.UrbanDictionaryEntry;
 import uk.co.jamesmcnee.urbancli.service.UrbanDictionaryService;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,9 +22,19 @@ import static java.util.Collections.singletonList;
 public class DefineCommands {
 
     private final UrbanDictionaryService urbanDictionaryService;
+    private final LineReader lineReader;
 
-    public DefineCommands(UrbanDictionaryService urbanDictionaryService) {
+    @Autowired
+    public DefineCommands(UrbanDictionaryService urbanDictionaryService, @Lazy LineReader lineReader) {
         this.urbanDictionaryService = urbanDictionaryService;
+        this.lineReader = lineReader;
+    }
+
+    @ShellMethod(value = "Clear all search history", group = "")
+    public AttributedString clearHistory() throws IOException {
+        lineReader.getHistory().purge();
+
+        return CommandHelper.standardPrefixed("Info", "Command history has now been purged!");
     }
 
     @ShellMethod(value = "Lookup a word/term and see the definition", key = {"define", "lookup"})
