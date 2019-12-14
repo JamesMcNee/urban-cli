@@ -1,0 +1,10 @@
+urbandictionary:
+  url: https://api.urbandictionary.com
+
+logging:
+  level:
+    root: OFF
+
+spring:
+  main:
+    banner-mode: "off"

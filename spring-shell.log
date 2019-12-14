@@ -1,0 +1,72 @@
+1576315738658:help
+1576315758696:history
+1576315764715:clear
+1576315770733:exit
+1576315882289:help
+1576315884651:clear
+1576315888248:help
+1576315891597:exit
+1576327729517:help
+1576329088207:define shash
+1576332861447:define
+1576332870351:define stacktrace
+1576332879679:define --stacktrace
+1576332889599:stacktrace
+1576332900747:define stack
+1576333110994:define -d
+1576333119779:-d
+1576333126352:define -d shash
+1576333515314:define shash
+1576333663258:define shash --use-highest-rated true
+1576333689426:define --term shash --use-highest-rated true
+1576333693158:stacktrace
+1576334220216:shell
+1576334222256:define
+1576334296419:define --term shash
+1576334304483:define --term shash --use-highest-rated true
+1576334436290:define shash
+1576334446666:define shash --use-highest-rated true
+1576334452672:define lol
+1576334472327:define lol --use-highest-rated true
+1576334773796:help
+1576334778088:define help
+1576334782103:help define
+1576334794380:help
+1576334977218:define help
+1576334990135:define purple
+1576335343891:define hello
+1576336304270:define shash
+1576336320846:help
+1576336650722:define shash
+1576336658595:define trodden
+1576336680656:define trodden --use-highest-rated
+1576336684704:define trodden --use-highest-rated true
+1576336696146:define plug
+1576336708833:define cavity
+1576336751759:define sugar daddy
+1576336762872:define one two
+1576336771526:define one two three
+1576336784284:define shash mcshash
+1576336794838:define "sugar daddy"
+1576336830809:define lolly
+1576336861962:define lolly --use-highest-rated true
+1576337061462:define hello
+1576337976701:[A
+1576337981320:define hello
+1576337998644:define hello --use-highest-rated
+1576338002391:define hello --use-highest-rated true
+1576338047155:define telescope
+1576338075641:define snowflake
+1576338128187:define "american bombshell"
+1576338137888:define yank
+1576338206470:hello
+1576338208702:define hello
+1576338214727:define ssdhhshsf
+1576338257542:define yousef
+1576338273756:define netflix
+1576338282578:define "Netflix and chill"
+1576338332081:lookup hello
+1576338334845:help
+1576338508123:lookup hello
+1576338537330:lookup hello --use-highest-rated
+1576338650646:help
