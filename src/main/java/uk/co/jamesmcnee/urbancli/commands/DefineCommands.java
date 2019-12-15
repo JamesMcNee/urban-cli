@@ -17,7 +17,6 @@ import java.util.Optional;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 
-
 @ShellComponent
 public class DefineCommands {
 
@@ -30,7 +29,7 @@ public class DefineCommands {
         this.lineReader = lineReader;
     }
 
-    @ShellMethod(value = "Clear all search history", group = "")
+    @ShellMethod(value = "Clear all search history")
     public AttributedString clearHistory() throws IOException {
         lineReader.getHistory().purge();
 
